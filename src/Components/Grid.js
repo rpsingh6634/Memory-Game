@@ -41,14 +41,14 @@ const Grid = () => {
             }
             return previous;
           }, 0);
-          if(flipped_count_after == 2){
+          if(flipped_count_after === 2){
             const selected_index = [];
             flipped_copy.forEach((single_element, idx) => {
                 if(single_element){
                   selected_index.push(idx);
                 }
             });
-            if(randomArr[selected_index[0]] == randomArr[selected_index[1]]){
+            if(randomArr[selected_index[0]] === randomArr[selected_index[1]]){
                 const matched_copy = [...matched];
                 matched_copy[selected_index[0]] = true;
                 matched_copy[selected_index[1]] = true;
