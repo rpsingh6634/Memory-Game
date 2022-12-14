@@ -6,7 +6,7 @@ body {
 }
 
 :root {
-  --base: #E8EDDF;
+  --base: #e1ecf4;
   --light:  #CFDBD5;
   --yellow: #F5CB5C;
   --dark: #333533;
@@ -60,7 +60,6 @@ body {
   margin: auto;
   grid-gap: 0.5rem;
   padding: 0.5rem;
-  /* grid-template-columns: 1fr 1fr 1fr 1fr; */
 }
 
 .card {
@@ -97,4 +96,19 @@ body {
 
 .scorecard {
   color: var(--black);
+}
+.newGame{
+  background-color: #6E6D70;
+  color: #fff;
+  border: none;
+  padding: 6px 15px;
+  box-sizing: border-box;
+  border-radius: 100px;
+  font-size: 1rem;
+  height: auto;
+  font-family: 'Baloo Bhai 2', cursive;
+  cursor: pointer;
+}
+.newGame:hover{
+  background-color: var(--black);
 }

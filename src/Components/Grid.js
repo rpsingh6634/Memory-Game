@@ -12,6 +12,12 @@ const Grid = () => {
   const [timerID, setTimerID] = useState(0);
   const [score, setScore] = useState(0);
   const [winning, setWinning] = useState(false);
+  function handleNewGameClick (){
+    setFlipped(initRevealState);
+    setMatched(initRevealState);
+    setWinning(0);
+    setScore(0);
+  }
 
   useEffect(() => {
     const random_arr = randomizeArr(pair_emojis);
@@ -80,6 +86,7 @@ const Grid = () => {
   return (
     <>
     {winning ? <Confetti /> : false}
+    {winning ? <button className="newGame" onClick={()=>handleNewGameClick()}>New Game</button> : false}
     <div className="cards-container">
       {flipped.map((single_data, idx) => {
         const emoji = randomArr[idx];
