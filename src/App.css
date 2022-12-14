@@ -1,15 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap');
-body{
+
+body {
   font-family: 'Baloo Bhai 2', cursive;
   background-color: var(--base);
 }
+
 :root {
   --base: #E8EDDF;
-  --light: #CFDBD5;
+  --light:  #CFDBD5;
   --yellow: #F5CB5C;
   --dark: #333533;
   --black: #242423;
 }
+
 .App {
   text-align: center;
 }
@@ -49,43 +52,49 @@ body{
   }
 }
 
-.cards-container{
+
+.cards-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   max-width: 50rem;
   margin: auto;
   grid-gap: 0.5rem;
   padding: 0.5rem;
+  /* grid-template-columns: 1fr 1fr 1fr 1fr; */
 }
 
-.card{
+.card {
   border: 3px solid var(--base);
   border-radius: 5px;
   background-color: var(--dark);
   transition: all 0.25s;
   cursor: pointer;
 }
-.card:hover{
+
+.card:hover {
   border-color: var(--yellow);
 }
-.content{
+
+.content {
   visibility: hidden;
 }
 
-.flipped{
+.flipped {
   background-color: transparent;
 }
 
-.flipped > content{
+.flipped > .content {
   visibility: visible;
 }
 
-.main-title{
-  color: var(--black);
+.main-title {
+  color: var(--black)
 }
-.card.flipped{
+
+.card.flipped {
   border-color: var(--black);
 }
-.scorecard{
+
+.scorecard {
   color: var(--black);
 }

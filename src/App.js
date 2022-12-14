@@ -5,8 +5,8 @@ import Grid from './Components/Grid';
 function App() {
   return (
     <div className="App">
-     <Header/>
-     <Grid/>
+      <Header />
+      <Grid />
     </div>
   );
 }
